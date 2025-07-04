@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    background-color: #F0EBF2;
+}
+
+header {
+    padding: 24px 40px;
+    background-color: #333333;
+    color: #fafbfc;
+}
+
+.fullwidth {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+li {
+    display: inline-flex;
+}
+
+.navbar a  {
+    display: flex;
+    padding: 0 8px;
+    color: #F9F7FA;
+    align-items: center;
+}
+
+
+nav a:hover {
+    color: #F9F7FA99;
+    scale: 1.05;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav button {
+    color: #F9F7FA;
+    background-color: #00BCD4;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+}
+
+nav button:hover {
+    scale: 1.05;
+    background-color: #00BCD499;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info, .educacion, .solicitudes, .contactos {
+    position: relative;
+    background-color: #F9F7FA;
+    border-radius: 24px;
+    margin: 24px;
+    box-shadow: 0 4px 8px #150B1955;
+}
+
+.top {
+    background-color: #00BCD4;
+    width: 100%;
+    height: 100px;
+    border-radius: 24px 24px 0 0;
+}
+
+.info img {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #F9F7FA;
+    position: absolute;
+    top: 48px;
+    left: 24px;
+    margin-bottom: 0;
+}
+
+.contenido {
+    padding: 28px;
+    margin-top: 48px;
+}
+
+.contenido h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 4px 0;
+}
+
+.contenido p {
+    font-size: 1rem;
+}
+
+.parrafo {
+    padding: 8px 0;
+}
+
+.parrafo span {
+    vertical-align: middle;
+}
+
+.parrafo a {
+    color: #027DC0;
+}
+
+.parrafo a:hover {
+    color: #015380;
+}
+
+.educacion, .solicitudes, .contactos {
+    padding: 28px;
+}
+
+.educacion h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.solicitudes h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.solicitud p {
+    font-size: large;
+}
+
+.solicitudes img {
+    width: 40px;
+    border-radius: 12px;
+    border:2px solid #00BCD4;
+    margin: 2px 0;
+}
+
+.solicitud {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-right: 40px;
+}
+
+.solicitante {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.iconos .material-symbols-rounded {
+    font-size:2.75rem;
+}
+
+.iconos { 
+    display: inline-flex;
+}
+
+.iconos button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.aceptar {
+    color: #25A272;
+}
+
+.aceptar:hover {
+    background-color: #25A27244;
+    border-radius: 100%;
+    color: #196C4C;
+    scale: 1.05;
+}
+
+.rechazar {
+    color: #ac0c0c;
+}
+
+.rechazar:hover {
+    background-color: #ac0c0c44;
+    border-radius: 100%;
+    color: #730808;
+    scale: 1.05;
+}
+
+.contactos h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contacto p {
+    font-size: large;
+}
+
+.contacto img {
+    width: 40px;
+    border-radius: 50%;
+    border:2px solid #050D18;
+    margin: 2px 0;
+}
+
+section {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media (max-width: 980px) {
+    section {
+        flex-basis: 100%;
+    }
+
+    aside {
+        flex-basis: 100%;
+    }
+}
+
+
+

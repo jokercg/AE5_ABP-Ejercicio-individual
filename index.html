@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <meta name="author" content="Jorge Rodriguez" />
+    <meta name="description" content="Ejercicio individual" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=cancel,check_circle,settings&display=block" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header class="fullwidth">
+        <div class="contenedor">
+            <div class="navbar">
+                <a href="#Perfil">
+                    <h3>Perfil</h3>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#perfil">Mi perfil</a></li>
+                        <li><a href="#nconexiones">Encontrar conexiones</a></li>
+                    </ul>
+                    <button>Cerrar sesión</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor">
+        <section id="perfil">
+            <div class="info">
+                <div class="top"></div>
+                <img id="img-perfil" src="assets/img/Perfil1.png" alt="foto perfil Linn Olsen" />
+                <div class="contenido">
+                    <h2 id="nombre">Linn Olsen</h2>
+                    <div class="parrafo">
+                        <p id="pais">Bergen, Noruega</p>
+                        <p id="profesion">
+                            Diseñadora de UX/UI | Desarrolladora Frontend | Amante de la
+                            naturaleza
+                        </p>
+                    </div>
+                    <div class="parrafo">
+                        <p id="resumen">
+                            Apasionada por crear experiencaias digitales hermosas y
+                            funcionales. Cuando no está codificando, disfruta explorando los
+                            fiordos noruegos y capturando la belleza de la naturaleza en
+                            fotografías
+                        </p>
+                    </div>
+                    <div class="parrafo">
+                        <a onclick="cambioPerfil()" id="edit" href="#"><span
+                                class="material-symbols-rounded">&#xE8B8;</span><span>Editar perfil</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="educacion">
+                <h3>Education</h3>
+                <p>Coding Dojo - Bootcamp de Desarrollo Full Stack</p>
+                <p>Dic 2019 - Mar 2020</p>
+                <p>Triple cinturón negro en Python, Mern y C#</p>
+            </div>
+        </section>
+
+        <aside id="conexion">
+            <div class="solicitudes">
+                <h3 id="soicitudConexion">Solicitudes de Conexión <span id="cantidadSolicitudes"></span></h3>
+                <div id="solicitudConexion">
+                    <!-- <div class="solicitante">
+                        <img class="imagenSolicitant" src="" alt="imagen solicitante" />
+                        <p class=""></p>
+                    </div>
+                    <div class="iconos">
+                        <a id="aceptar" href="#"><span class="material-symbols-rounded aceptar">&#xE86C;</span></a>
+                        <a href="#"><span class="material-symbols-rounded rechazar">&#xE5C9;</span></a>
+                    </div> -->
+                </div>
+            </div>
+            <div id="listaContactos">
+                <div class="contactos">
+                    <h3>Tus Conexiones <span id="cantidadContactos"></span></h3>
+                    <div id="usuariosConectados"></div>
+                    <!-- <div class="contacto">
+                        <span><img src="assets/img/conec1.png" alt="" /></span>
+                        <p>Adrien Desplatz</p>
+                    </div> -->
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
