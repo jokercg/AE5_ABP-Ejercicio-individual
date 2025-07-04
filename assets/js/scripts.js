@@ -217,7 +217,7 @@ function cambioPerfil() {
 		resumen.textContent = "Combino diseño y desarrollo para crear interfaces funcionales, atractivas y pensadas en el usuario. Trabajo con Figma, HTML, CSS y JavaScript para llevar ideas a soluciones reales que se ven y funcionan bien."
 	} else {
 // se se muestra el segundo perfil, cambia al primero
-		imgPerfil.src = "./assets/img/perfil1.png"
+		imgPerfil.src = "./assets/img/Perfil1.png"
 		nombre.textContent = "Linn Olsen"
 		pais.textContent = "Bergen, Noruega"
 		profesion.textContent = "Diseñadora de UX/UI | Desarrolladora Frontend | Amante de la naturaleza"
